@@ -1,0 +1,20 @@
+{
+  "name": "passport-login",
+  "version": "1.0.0",
+  "description": "Node.js Passport Login System",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "khouloud Haddad Amamou",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.22"
+  }
+}
