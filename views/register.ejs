@@ -1,19 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Node with Passport | Register</title>
- 
+
     <%- include('_partials/header') %>
 
-   <div class="container">
-    <div class="row">
-        <div class="col-12 py-5">
-            
-        </div>
-    </div>
-   </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-wrapper">
 
-   <%- include('_partials/footer') %>
+                        <h4>Register</h4>
+                        <div class="page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a href="/">Pages</a></li>
+                                <li class="breadcrumb-item active">Register</li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-12">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="text-primary mb-3">Register</h1>
+                        </div>
+                        <div class="card-body">
+                            <form action="/register" method="POST">
+                                <div class="mb-4">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        aria-describedby="UserName" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        aria-describedby="emailHelp" required>
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" required>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Register</button>
+                            </form>
+
+                            <div class="mt-5">
+                                Already have an account? <a href="/login">Log In instead !</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%- include('_partials/footer') %>

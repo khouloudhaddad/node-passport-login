@@ -12,6 +12,16 @@
         --danger-btn-hover-bg: #e75573;
     }
 
+    a {
+        text-decoration: none;
+        color: #727cf5;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+    }
+
     body {
         background-color: var(--bg-body);
         font-size: 1rem;
@@ -20,7 +30,6 @@
 
     .btn {
         padding: 0.45rem 0.9rem;
-        margin: 0 0.25rem;
     }
 
     .btn-primary {
@@ -59,8 +68,83 @@
         color: #eef2f7;
     }
 
+    .btn-actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .btn-actions .btn {
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-actions .btn svg {
+        margin-right: 0.25rem;
+    }
+
+    .text-primary {
+        color: var(--color-primary) !important;
+    }
+
+    .card {
+        box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15) !important;
+        border-color: transparent !important;
+        padding: 1rem;
+
+    }
+
+    .card-header{
+        background-color: transparent !important;
+        border-bottom: none !important;
+    }
+
     footer {
         background-color: #fff;
         padding: 30px 25px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+
+    .page-title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        align-items: center;
+
+    }
+
+    .page-title-wrapper h4 {
+        font-size: 18px;
+        margin: 0;
+        line-height: 75px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .page-title-wrapper .breadcrumb {
+        padding-top: 8px;
+    }
+
+    .m-0 {
+        margin: 0 !important;
+    }
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        font-size: 24px;
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        line-height: 1.3;
+    }
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        float: left;
+        padding-right: 0.5rem;
+        color: rgba(108, 117, 125, 0.75);
+        content: "\e5cc";
     }
 </style>
