@@ -9,6 +9,16 @@
 
     <%- include('_partials/header') %>
 
+    <% if (messages.error) { %>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12 p-3 text-primary-emphasis bg-danger-subtle border border-danger-subtle rounded-3">
+                <%= messages.error %>
+            </div>
+        </div>
+    </div>
+    <% } %>
+
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -33,7 +43,7 @@
                             <h1 class="text-primary mb-3">Login</h1>
                         </div>
                         <div class="card-body">
-                            <form action="/register" method="POST">
+                            <form action="/login" method="POST">
 
                                 <div class="mb-4">
                                     <label for="email" class="form-label">Email address</label>
