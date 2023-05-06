@@ -13,6 +13,10 @@
         <div class="col-12 py-5">
             <h1 class="text-primary">Node Passport Login System</h1>
             <h2>Hello <%= name %></h1>
+
+                <form action="/logout?_method=DELETE" method="POST">
+                    <button type="submit" class="navbar-btn btn btn-sm btn-danger lift ms-2">Log Out</button>
+                </form>
         </div>
     </div>
    </div>
